@@ -1,0 +1,13 @@
+I"=(function() {
+  (function($) {
+    return $(function() {
+      return $('.js-year-select').on('change', function() {
+        var base_url;
+        base_url = window.location.href.split('?')[0];
+        return window.location.href = base_url + "?year=" + $(this).val();
+      });
+    });
+  })(jQuery);
+
+}).call(this);
+:ET
